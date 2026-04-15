@@ -1,0 +1,60 @@
+@font-face {
+    font-family: "Amiri";
+    src: url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+}
+
+body {
+    font-family: "Amiri";
+    font-size: 16pt;
+}
+
+table,
+th,
+td {
+    font-size: 15pt;
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+    text-align: center;
+}
+
+table {
+    margin-right: 10px;
+}
+
+thead {
+    border: 1px solid black;
+}
+
+tr:nth-child(1),
+tr:nth-child(2) {
+    background-color: #eaecf0;
+}
+
+tr {
+    background-color: #f8f9fa;
+}
+
+.arabic td {
+    font-weight: bold;
+}
+
+.arabic td:nth-child(2),
+.arabic td:last-child {
+    font-weight: normal;
+    font-style: italic;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+}
+
+.converter textarea {
+    width: 390px;
+    height: 150px;
+    resize: none;
+    font-family: "Amiri";
+    font-size: 16pt;
+}
