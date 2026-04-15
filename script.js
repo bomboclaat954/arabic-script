@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
         'ل',
         'م',
         'ن',
-        'ﻩ',
+        'ه',
         'و',
         'ي'
     ];
