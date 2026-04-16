@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
         'ب',
         'پ',
         'ت',
+        'ة',
         'ث',
         'ج',
         'چ',
@@ -38,6 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
         'b',
         'p',
         't',
+        'ä',
         'ṯ',
         'j',
         'č',
@@ -81,6 +83,26 @@ document.addEventListener("DOMContentLoaded", () => {
             else if (content[i] == 'c') a += 'چ';
             else if (content[i] == 'x') a += 'خ';
             else if (content[i] == 'ʾ' || content[i] == `'`) a += 'ع';
+            else if (content[i] == 't' && content[i + 1] == 'h') {
+                a += 'ث';
+                content = content.replace('h', '');
+            }
+            else if (content[i] == 'k' && content[i + 1] == 'h') {
+                a += 'خ';
+                content = content.replace('h', '');
+            }
+            else if (content[i] == 'd' && content[i + 1] == 'h') {
+                a += 'ذ';
+                content = content.replace('h', '');
+            }
+            else if (content[i] == 's' && content[i + 1] == 'h') {
+                a += 'ش';
+                content = content.replace('h', '');
+            }
+            else if (content[i] == 'g' && content[i + 1] == 'h') {
+                a += 'غ';
+                content = content.replace('h', '');
+            }
             else if (pos == -1) a += content[i];
             else a += arabic_persian[pos];
         }
