@@ -1,10 +1,7 @@
-@font-face {
-    font-family: "Amiri";
-    src: url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Markazi+Text:wght@400..700&display=swap');
 
 body {
-    font-family: "Amiri";
+    font-family: "Inter";
     font-size: 16pt;
 }
 
@@ -35,8 +32,18 @@ tr {
     background-color: #f8f9fa;
 }
 
+#arabic-txt {
+    font-family: "Markazi Text";
+    font-size: 24pt;
+}
+
+#latin-txt {
+    font-family: "Inter";
+}
+
 .arabic td {
     font-weight: bold;
+    font-family: "Markazi Text";
 }
 
 .arabic td:nth-child(2),
