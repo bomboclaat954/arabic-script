@@ -15,14 +15,6 @@ td {
     text-align: center;
 }
 
-table {
-    margin-right: 10px;
-}
-
-thead {
-    border: 1px solid black;
-}
-
 tr:nth-child(1),
 tr:nth-child(2) {
     background-color: #eaecf0;
@@ -32,13 +24,8 @@ tr {
     background-color: #f8f9fa;
 }
 
-#arabic-txt {
-    font-family: "Markazi Text";
-    font-size: 24pt;
-}
-
-#latin-txt {
-    font-family: "Markazi Text";
+tr:hover {
+    background-color: #eaecf0;
 }
 
 .arabic td {
@@ -62,6 +49,6 @@ tr {
     width: 390px;
     height: 150px;
     resize: none;
-    font-family: "Amiri";
-    font-size: 16pt;
+    font-family: "Markazi Text";
+    font-size: 24pt;
 }

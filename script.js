@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
         'ḍ',
         'ṭ',
         'ẓ',
-        'ʻ',
+        'ʿ',
         'ḡ',
         'f',
         'q',
@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", () => {
             else if (content[i] == 'i' || content[i] == 'e') a += 'ي';
             else if (content[i] == 'c') a += 'چ';
             else if (content[i] == 'x') a += 'خ';
-            else if (content[i] == 'ʾ' || content[i] == `'`) a += 'ع';
+            else if (content[i] == 'ʿ' || content[i] == `'`) a += 'ع';
             else if (content[i] == 't' && content[i + 1] == 'h') {
                 a += 'ث';
                 content = content.replace('h', '');
