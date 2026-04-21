@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     const arabic_persian = [
         'ا',
+        'ى',
         'ب',
         'پ',
         'ت',
@@ -36,6 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
     ];
     const transcription = [
         'a',
+        'à',
         'b',
         'p',
         't',
@@ -101,6 +103,10 @@ document.addEventListener("DOMContentLoaded", () => {
             }
             else if (content[i] == 'g' && content[i + 1] == 'h') {
                 a += 'غ';
+                content = content.replace('h', '');
+            }
+            else if (content[i] == 'z' && content[i + 1] == 'h') {
+                a += 'ژ';
                 content = content.replace('h', '');
             }
             else if (pos == -1) a += content[i];

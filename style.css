@@ -51,4 +51,6 @@ tr:hover {
     resize: none;
     font-family: "Markazi Text";
     font-size: 24pt;
+    border: 1px solid black;
+    border-radius: 3px;
 }
